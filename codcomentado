@@ -1,0 +1,13 @@
+def remove_repetidos(lista):        #nome da funcao (parametro):
+    lista1 = []                     #lista1 esta vazia
+    for i in lista:                 #para cada item em lista
+        if i not in lista1:           #se o item nao estiver em lista1
+            lista1.append (i)            #lista1 recebera o item               
+    return sorted(lista1)           #retorna a lista1 com os elementos em ordem e sem numeros repetidos.
+    
+#execucao:
+lista = [-1, -22, 40, 2, 2, 3, 3, 1, 0, 10,10,25,2,33,66,77,8,88,9]
+remove_repetidos(lista)
+    
+    
+    
